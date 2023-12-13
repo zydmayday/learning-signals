@@ -9,15 +9,15 @@ function TodoNew() {
   return (
     <>
       <Grid columns="2" gap="3">
-        <Box width="100%" p="3">
-          <TextField.Input
-            placeholder="Your new todo..."
-            value={newTodoText.value}
-            onInput={onInput}
-          />
-        </Box>
-        <Box width="1" p="3">
-          <Button onClick={addTodo}>Add</Button>
+        <TextField.Input
+          placeholder="Your new todo..."
+          value={newTodoText.value}
+          onInput={onInput}
+        />
+        <Box>
+          <Button onClick={addTodo} disabled={newTodoText.value === ""}>
+            Add
+          </Button>
         </Box>
       </Grid>
     </>

@@ -5,11 +5,11 @@ import TodoItem from "./TodoItem";
 function TodoList() {
   return (
     <>
-      <Grid key="todolist-grid">
+      <Grid>
         {todos.value.map((todo, i) => {
           return (
             <>
-              <Box p="3" key={todo.text + i}>
+              <Box p="1" key={todo.text + i}>
                 <TodoItem todo={todo} />
               </Box>
             </>

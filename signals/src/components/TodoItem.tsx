@@ -5,9 +5,7 @@ const TodoItem = ({ todo }: { todo: Todo }) => {
   return (
     <>
       <Grid gap="3" columns="2">
-        <Box>
-          <Text>{todo.text}</Text>
-        </Box>
+        <Text>{todo.text}</Text>
         <Box>
           <Button color="red" onClick={() => deleteTodo(todo)}>
             remove
